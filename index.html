@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blair Aitken</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<!-- Header with Navigation Menu -->
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="#aboutme">01. About Me</a></li>
+      <li><a href="#currentproject">02. Current Project</a></li>
+      <li><a href="#pastwork">03. Past Work</a></li>
+      <li><a href="#contact">04. Contact</a></li>
+      <li>
+        <button onclick="window.open('Resume of Blair Aitken.pdf', '_blank')">Resume</button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- Home Section -->
+  <div id="home">
+  <section id="home">
+    <div class="container">
+    <h2>Hi, my name is</h2>
+    <h1>BLAIR AITKEN</h1>
+    <p>I'm a Postdoctoral Research Fellow dedicated to improving road safety through high-quality research. Currently, I'm focused on developing new methods for real-time impairment detection through ocular assessment.</p>
+    <button onclick="location.href='mailto:baitken@swin.edu.au'">Get In Touch</button>
+    </div>
+  </section>
+  </div>
+
+  <!-- About Me Section -->
+  <div id="aboutme">
+  <section id="aboutme">
+    <div class="container">
+    <div class="content">
+    <h1>01. About Me</h1>
+    <p>Over the years, I've had the opportunity to collaborate with leading experts, and am currently a member of Swinburne University's Drugs and Driving Research Unit as well as the ICADTS Driver Monitoring System Working Group.</p>
+    <p>My current research is centered around the development of next-generation driver monitoring systems that can detect driving impairment and crash risk in real-time. These systems identify distinct visual scanning patterns linked to impaired driving and promptly alert the driver to prevent potential road accidents.</p>
+    <p>I have experience in various analytical tools and psychometric assessments, such Forum8's UC-win/Road driving simulation software, cognitive assessment tools like CANTAB AND DRUID, as well as programming languages R and Python, among others.</p>
+    </div>
+    <img src="images/me.jpg">
+    </div>
+  </section>
+  </div>
+
+  <!-- Current Project Section -->
+  <div id="currentproject">
+  <section id="currentproject">
+    <div class="container">
+      <div class="content">
+      <h1>02. Current Project</h1>
+       <p>My current research is focused on the effect of alcohol on gaze behaviour during simulated driving.
+            This project, in conjunction with industry leaders Seeing Machines, intends to adapt and create
+            eye-tracking technologies capable of indexing and monitoring intoxicated drivers in real-time, providing immediate alerts upon detection of driving impairment. 
+            This technology represents a significant step forward in our efforts to improve road safety, particularly in an era where 
+            technology is increasingly intersecting with road safety.</p>
+      <p>My responsibilities include, but are not limited to, handling recruitment, data collection, management and analysis, and overall project administration.</p>
+      </div>
+      <video controls autoplay muted loop>
+        <source src="videos/forum8.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  </div>
+
+  <!-- Past Work Section -->
+    <div id="pastwork">
+      <section id="pastwork">
+        <div class="container">
+        <div class="content">
+        <h1>03. Past Work</h1>
+        <p>Over the years, I've had the opportunity to collaborate with leading experts, and am currently a member of Swinburne University's Drugs and Driving Research Unit as well as the ICADTS Driver Monitoring System Working Group.</p>
+        <p>My current research is centered around the development of next-generation driver monitoring systems that can detect driving impairment and crash risk in real-time. These systems identify distinct visual scanning patterns linked to impaired driving and promptly alert the driver to prevent potential road accidents.</p>
+        <p>I have experience in various analytical tools and psychometric assessments, such Forum8's UC-win/Road driving simulation software, cognitive assessment tools like CANTAB AND DRUID, as well as programming languages R and Python, among others.</p>
+        </div>
+        <img src="images/me.jpg">
+        </div>
+      </section>
+      </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+        <h1>04. Contact</h1>
+        <p>Please reach out with any questions regarding my work or for potential collaborations.</p>
+    </section>
+</main>
+
+<button id="backToTopBtn">Back to Top</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
