@@ -25,3 +25,19 @@ window.onscroll = function() {
 document.getElementById('backToTopBtn').addEventListener('click', function() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
+
+$(document).ready(function(){
+  // Function to scroll right
+  $('.right-scroll').click(function(){
+    $('.scrollable-display').animate({
+      scrollLeft: '+=300'
+    }, 'slow');
+  });
+
+  // Function to scroll left
+  $('.left-scroll').click(function(){
+    $('.scrollable-display').animate({
+      scrollLeft: '-=300'
+    }, 'slow');
+  });
+});
