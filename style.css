@@ -68,16 +68,8 @@ header {
 
 /* Home Section Style */
 
-#home {
-  background-color: #fff;
-  color: #000000; 
-  padding-top: 150  px; 
-  padding-bottom: 50px; 
-  text-align: left; 
-}
-
 #home .container {
-  padding-top: 160px;
+  padding-top: 175px;
   max-width: 750px; 
   margin-left: 200px; 
 }
@@ -118,27 +110,14 @@ header {
 
 /* About Me Section Style */
 
-#aboutme {
-  background-color: #fff;
-  color: #000000; 
-  padding-top: 150px; 
-  padding-bottom: 50px; 
-  text-align: left; 
-  width: 100;
-  top: 0;
-}
-
 #aboutme .container {
   max-width: 1000px; 
-  margin-top: 20px;
+  margin-top: 70px;
   margin-left: 200px; 
   display: flex;
   justify-content: space-between; 
   align-items: center;
 }
-
-#aboutme .content {
-  width: 65%; }
 
 #aboutme h1 {
   margin-bottom: 30px;
@@ -157,89 +136,30 @@ header {
 }
 
 #aboutme img {
-  width: 35%;
+  margin-top: 37.5px;
+  width: 30%;
   border-radius: 10px;
 }
 
-/* Current Project Section Style */
+/* Experience Section Style */
 
-#currentproject {
-  background-color: #fff;
-  color: #000000; 
-  padding-top: 150px; 
-  padding-bottom: 50px; 
-  text-align: left; 
-  width: 100;
-  top: 0;
-}
-
-#currentproject  .container {
+#experience .container {
   max-width: 1000px; 
-  margin-top: 20px;
+  margin-top: 70px;
   margin-left: 200px; 
   display: flex;
   justify-content: space-between; 
   align-items: center;
 }
 
-#currentproject  .content {
-  width: 55%; 
-  margin-right: 50px; 
-}
-
-#currentproject  h1 {
+#experience h1 {
   margin-bottom: 30px;
   font-size: 1.5rem; 
   font-weight:bolder; 
   font-family: 'Open Sans', sans-serif;
 }
 
-#currentproject  p {
-  max-width: 400px;
-  margin-bottom: 30px; 
-  font-size: 0.90rem; 
-  color: #000000; 
-  text-align: justify; 
-  text-justify: inter-word; 
-}
-
-#currentproject video {
-  width: 50%;
-  border-radius: 10px;
-}
-
-/* Past Work Section Style */
-
-#pastwork {
-  background-color: #fff;
-  color: #000000; 
-  padding-top: 150px; 
-  padding-bottom: 50px; 
-  text-align: left; 
-  width: 100;
-  top: 0;
-}
-
-#pastwork .container {
-  max-width: 1000px; 
-  margin-top: 20px;
-  margin-left: 200px; 
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-}
-
-#pastwork .content {
-  width: 65%; }
-
-#aboutme h1 {
-  margin-bottom: 30px;
-  font-size: 1.5rem; 
-  font-weight:bolder; 
-  font-family: 'Open Sans', sans-serif;
-}
-
-#pastwork p {
+#experience p {
   max-width: 550px;
   margin-bottom: 30px; 
   font-size: 0.90rem; 
@@ -248,20 +168,55 @@ header {
   text-justify: inter-word; 
 }
 
-#pastwork img {
-  width: 35%;
-  border-radius: 10px;
+/* Thesis Section Style */
+
+#thesis .container {
+  max-width: 1000px; 
+  margin-top: 70px;
+  margin-left: 200px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 }
 
+#thesis h1 {
+  margin-bottom: 30px;
+  font-size: 1.5rem; 
+  font-weight:bolder; 
+  font-family: 'Open Sans', sans-serif;
+}
 
-/* Adjustments for fixed sections to scrolling */
-#aboutme, #currentproject, #pastwork, #contact {
-  position: relative; /* Changed from fixed for proper flow */
+#thesis p {
+  max-width: 600px;
+  margin-bottom: 30px; 
+  font-size: 0.90rem; 
+  color: #000000; 
+  text-align: justify; 
+  text-justify: inter-word; 
+}
+
+#thesis img {
+  margin-top: 25px;
+  width: 25%;
+}
+
+.download-link {
+  color: #007bff; /* Blue color for the link */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Makes text bold */
+}
+
+.download-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+#aboutme, #experience, #thesis {
+  position: relative; 
   top: auto;
-  padding-top: 50px; /* Adjusted spacing */
+  padding-top: 50px; 
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     padding: 160px 20px;
@@ -272,13 +227,8 @@ header {
     padding-right: 0;
   }
 
-  #aboutme img, #currentproject video {
-    width: 100%; /* Full width for smaller devices */
-    margin-top: 20px; /* Added space above for clarity */
-  }
-
   .menu li {
-    margin: 10px 5px; /* Reduced spacing for smaller screens */
+    margin: 10px 5px; 
   }
 }
 
@@ -295,7 +245,7 @@ header {
   cursor: pointer;
   padding: 6px 15px;
   border-radius:4px;
-  display: none; /* Initially hidden */
+  display: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
