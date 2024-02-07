@@ -7,11 +7,8 @@ html, body {
   overflow-x: hidden;
 }
 
-html, body {
-  overflow-y: hidden; /* This hides the vertical scrollbar */
-}
-
 html {
+  overflow-y: hidden; 
   scroll-behavior: smooth;
 }
 
@@ -173,6 +170,7 @@ header {
 #thesis .container {
   max-width: 1000px; 
   margin-top: 70px;
+  margin-bottom: 70px;
   margin-left: 200px; 
   display: flex;
   justify-content: space-between; 
