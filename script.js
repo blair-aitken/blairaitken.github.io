@@ -1,4 +1,3 @@
-// Optional: Smooth scroll for nav links (remove if not needed for "Back to Top" functionality)
 document.querySelectorAll('nav a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -11,7 +10,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
   });
 });
 
-// Show/Hide "Back to Top" Button based on scroll position
 window.onscroll = function() {
   var backToTopBtn = document.getElementById("backToTopBtn");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -21,13 +19,12 @@ window.onscroll = function() {
   }
 };
 
-// Smooth Scroll to Top on button click
 document.getElementById('backToTopBtn').addEventListener('click', function() {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
 $(document).ready(function(){
-  // Function to scroll right
+
   $('.right-scroll').click(function(){
     $('.scrollable-display').animate({
       scrollLeft: '+=300'
@@ -40,4 +37,8 @@ $(document).ready(function(){
       scrollLeft: '-=300'
     }, 'slow');
   });
+});
+
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.menu').classList.toggle('active');
 });
