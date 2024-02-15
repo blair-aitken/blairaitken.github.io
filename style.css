@@ -19,7 +19,7 @@ html {
 header {
   display: flex;
   align-items: center; 
-  justify-content: space-between; 
+  justify-content:flex-end; 
   position: fixed;
   top: 0; 
   left: 0; 
